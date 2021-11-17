@@ -1,0 +1,499 @@
+{%load static %}
+<html>
+
+<head>
+    <title>Testimonials - Easy Tutorials</title>
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+    <script src="https://use.fontawesome.com/93d0f84c5d.js"></script>
+
+</head>
+
+<style>
+    .profile-avatar {
+  border-radius: 50%;
+}
+
+</style>
+<body onload="slider()">
+    <div class = "navbar">
+        <ul>
+            <img src="{%static 'Logo/FUND-Z-logos_white.png'%}" height="100px" width="100px" style="padding: 20px;">
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'education'%}">EDUCATION</a></li>
+            <li><a href="{% url 'health' %}">HEALTH</a></li>
+            <li><a href="{% url 'startup'%}">START-UP</a></li>
+            <li><a href="{% url 'sports' %}">SPORTS</a></li>
+        </ul>
+    </div>
+    <div class="hero-image">
+        <img name="imgs" class = "hero1" width=100% height=700>
+        <div class="hero-text">
+            <h1 style="font-family:Verdana; color:ghostwhite;text-shadow: 0 0 2px rgb(0,0,0)">Health</h1>
+        </div>
+      </div>
+    <!--THis is for about uis -->
+    <div class="about">
+    <div class="card1">
+		<div class="card1__inner">
+			<div class="card1__face card1__face--front">
+				<h2>Heart Disease</h2>
+			</div>
+			<div class="card1__face card1__face--back">
+				<div class="card1__content">
+					<div class="card1__header">
+						<img src="https://www.cardio.com/hs-fs/hubfs/heart%20attack.jpeg?width=834&height=557&name=heart%20attack.jpeg" alt="" class="pp" />
+						<h2>Heart Disease</h2>
+					</div>
+					<div class="card1__body">
+						<h3>Domain Concentrated</h3>
+						<p style="text-align: justify;">Heart Disease is Disease which<strong> is Leading cause of Death in Many Countries</strong> which needs to be treated inorder to Rescue the Patient. So the people who are financially constrained from affording to the treatment can contact us.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="card2">
+		<div class="card2__inner">
+			<div class="card2__face card2__face--front">
+				<h2>Cancer</h2>
+			</div>
+			<div class="card2__face card2__face--back">
+				<div class="card2__content">
+					<div class="card2__header">
+						<img src="https://thewellproject.org/sites/default//files/article_images/cancer.jpg" alt="" class="pp" />
+						<h2>Cancer
+                        </h2>
+					</div>
+					<div class="card2__body">
+						<h3>Domain Concentrated</h3>
+						<p style="text-align: justify;">Cancer is <strong>One of Most dangerous yet common Disease</strong> these days, it needs treatment to avoid it to advance to further stages which will risk the patients life. So people who can't afford financially for treatment can contact us.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="card3">
+		<div class="card3__inner">
+			<div class="card3__face card3__face--front">
+				<h2>Corona Virus</h2>
+			</div>
+			<div class="card3__face card3__face--back">
+				<div class="card3__content">
+					<div class="card3__header">
+						<img src="https://www.fda.gov/files/Coronavirus_3D_illustration_by_CDC_1600x900.png" alt="" class="pp" />
+						<h2>Corona Virus</h2>
+					</div>
+					<div class="card3__body">
+						<h3>Domain Concentrated</h3>
+						<p style="text-align: justify;">Corona Virus is <strong>Deadly Virus</strong> Which Outbreak in the Recent days and killed many people. It needs instant treatment to recover from it But for some families affording for the treatment is bit tough.So if you can't afford treatment due to financial crisis you can contact us.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--THis is for about uis -->
+
+
+
+
+    <!--THis is for donation  -->
+    <div class="donation">
+    <div class="d_col">
+    <div class="modal">
+        <img src="images/Education/hellen.jpg"  alt="">
+        <div class="close"></div>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <div class="header">
+               
+                <div class="main">
+                    <div class="image">
+                        <img src="{%static 'images/Health/user4.jpg' %}" alt="raghav" width="110" height="120">
+                    </div>
+                    <h3 class="name">Raghav Agarwal</h3>
+                    <h3 class="sub-name">raghav07@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="left">
+                    <div class="about-container">
+                        <h3 class="title">Reason</h3>
+                        <p style = "text-align: justify;" class="text">I am Raghav.I am doing Engineering. I was Recently Diagonized with CAD . My Mother is a housewife, my father is not alive now , my mother could not afford the amount demanded by the Hospital For my Treatment. Please Help me By donating money.</p>
+                    </div>
+                    <br>
+                    <div class="buttons-wrap">
+                        <div class="follow-wrap">
+                            <a href="{%url 'pay' %}" class="follow">Donate</a>
+                        </div>
+                        <div class="share-wrap">
+                            <a href="#" class="share">Share</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                 
+                    <div>
+                        <h3 class="number">170k</h3>
+                        <h3 class="number-title">Required</h3>
+                    </div>
+                    <div>
+                        <h3 class="number">59K</h3>
+                        <h3 class="number-title">Donated</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <img src="" alt="">
+        <div class="close"></div>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="main">
+                    <div class="image">
+                        <img src="{%static 'images/Health/fathima.jpg'%}" alt="fathima" width="110" height="140">
+                    </div>
+                    <h3 class="name">Fathima Begum</h3>
+                    <h3 class="sub-name">fathimaB@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="left">
+                    <div class="about-container">
+                        <h3 class="title">Reason</h3>
+                        <p class="text" style="text-align: justify;">Hello. I am Fathima Begum,a Housewife. I was Recently Diagonized with Corona.My family is a Middle class family who cant afford to my Treatment. So i request you all to help me by donating some funds and help me Fight Covid.</p>
+                    </div>
+              <br>
+                    <div class="buttons-wrap">
+                        <div class="follow-wrap">
+                            <a href="{%url 'pay' %}" class="follow">Donate</a>
+                        </div>
+                        <div class="share-wrap">
+                            <a href="#" class="share">Share</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                 
+                    <div>
+                        <h3 class="number">235K</h3>
+                        <h3 class="number-title">Required</h3>
+                    </div>
+                    <div>
+                        <h3 class="number">112.4K</h3>
+                        <h3 class="number-title">Donated</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="d_col">
+    <div class="modal">
+        <img src="images/profile.jpeg" alt="">
+        <div class="close"></div>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <div class="header">
+               
+                <div class="main">
+                    <div class="image">
+                        <img src="{%static 'images/Health/pooja.PNG'%}" alt="pooja" width="140" height="130">
+                    </div>
+                    <h3 class="name">Pooja Prakash</h3>
+                    <h3 class="sub-name">pprakash12@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="left">
+                    <div class="about-container">
+                        <h3 class="title">Reason</h3>
+                        <p class="text" style="text-align: justify;">Hi I am Pooja , Software Employee at Infosys. An year back i was Diagonized with Breast Cancer. I was better last month but now it became worse . I spent all my money on my treatment till now, now i was left with no Money to pay for Further Treatment. Please help me for my Treatment.</p>
+                    </div>
+                    <br>
+                    <div class="buttons-wrap">
+                        <div class="follow-wrap">
+                            <a href="{%url 'pay' %}" class="follow">Donate</a>
+                        </div>
+                        <div class="share-wrap">
+                            <a href="#" class="share">Share</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                 
+                    <div>
+                        <h3 class="number">289K</h3>
+                        <h3 class="number-title">Required</h3>
+                    </div>
+                    <div>
+                        <h3 class="number">152K</h3>
+                        <h3 class="number-title">Donated</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <img src="" alt="">
+        <div class="close"></div>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <div class="header">
+               
+                <div class="main">
+                    <div class="image">
+                        <img src="{%static 'images/Health/gautam.png'%}" alt="Gautam" width="120" height="150">
+                    </div>
+                    <h3 class="name">Shiva Gautam</h3>
+                    <h3 class="sub-name">@Shivag@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="left">
+                    <div class="about-container">
+                        <h3 class="title">Reason</h3>
+                        <p class="text" style="text-align: justify;">Hi guys,This is Shiva Gautam, i am suffering from Lung Cancer from past 1-2 years.i am taking treatment in Thripta Clinics since then.But currently due to Pandemic My family is facing Financial Crisis. We are not in situation to pay for treatment. So please help me to pay to my treatment.</p>
+                    </div>
+                   <br>
+                    <div class="buttons-wrap">
+                        <div class="follow-wrap">
+                            <a href="{%url 'pay' %}" class="follow">Donate</a>
+                        </div>
+                        <div class="share-wrap">
+                            <a href="#" class="share">Share</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                 
+                    <div>
+                        <h3 class="number">218K</h3>
+                        <h3 class="number-title">Required</h3>
+                    </div>
+                    <div>
+                        <h3 class="number">109K</h3>
+                        <h3 class="number-title">Donated</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+    <!--- This is for Voluenteers --->
+    <div class=voluenteers>
+    <figure class="snip0013">
+        <img src="https://pbs.twimg.com/profile_images/1167376398501040128/u9gnGajD_400x400.jpg" alt="sample32"/>
+        <div>
+            <a href="https://twitter.com/LEPRAIndia"><i class="ion-social-twitter left icon"></i></a>
+            <a href="https://www.linkedin.com/in/lepra-society-331a6950/"><i class="ion-social-linkedin right-icon"></i></a>
+        </div>			
+    </figure>
+    <figure class="snip0013">
+        <img src="https://www.unitedwaymumbai.org/ngo_logos/410_logo.gif" alt="sample33"/>
+        <div>
+            <a href="https://twitter.com/Udaanwelfare"><i class="ion-social-twitter left-icon"></i></a>
+            <a href="https://www.linkedin.com/company/udaan-welfare-foundation"><i class="ion-social-linkedin right-icon"></i></a>
+        </div>			
+    </figure>
+    <figure class="snip0013">
+        <img src="https://excelcityindia.com/oc-content/uploads/79/21299.jpg" alt="sample34"/>
+        <div>
+            <a href="https://twitter.com/smilefoundation"><i class="ion-social-twitter left-icon"></i></a>
+            <a href="https://www.linkedin.com/company/smile-foundation"><i class="ion-social-linkedin right-icon"></i></a>
+        </div>			
+    </figure>
+    </div>
+    
+    <!--- This is for testimonials --->
+
+    <div class="container">
+        <div class="veiw-box">
+            <div id="testimonials">
+                <div class="user">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Anne_Frank_passport_photo%2C_May_1942.jpg" alt="">
+                    <p>No one has ever become poor by Giving.</p>
+                    <h3>Anne Frank</h3>
+                </div>
+                <div class="user space">
+                    <img src="https://img.etimg.com/thumb/msid-59334341,width-650,imgsize-153619,,resizemode-4,quality-100/.jpg" alt="">
+                    <p>We make a living by what we get , We make a Life by what we give.</p>
+                    <h3>Winston Churchill</h3>
+                </div>
+                <div class="user">
+                    <img src="https://i.insider.com/5eea91594dca6834276c1f24?width=700" alt="">
+                    <p>Only a Life lived for Others is Worthwhile.</p>
+                    <h3>Albert Einstein</h3>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <span id="control1"></span>
+                <span id="control2" class="active"></span>
+                <span id="control3"></span>
+            </div>
+            
+        </div>
+    </div>
+    
+
+<!--- This is for testimonials --->
+
+<!--    This si sfor counter-->
+<div class="test">
+<div class="counter-up">
+    <div class="content">
+      <div class="box">
+        <div class="icon"><i class="fa fa-history"></i></div>
+        <div class="counter">14</div>
+        <div class="text">Number of Donars</div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa fa-gift"></i></div>
+        <div class="counter">7</div>
+        <div class="text">Number of Donation Requests</div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa fa-users"></i></div>
+        <div class="counter">3</div>
+        <div class="text">Number of Completed Donations</div>
+      </div>
+     
+    </div>
+  </div>
+  
+</div>
+
+<!--Thus is for counter-->
+    <script>
+        var slideimg = document.getElementById('imgs');
+        var testimonials = document.getElementById('testimonials');
+        var control1 = document.getElementById('control1');
+        var control2 = document.getElementById('control2');
+        var control3 = document.getElementById('control3');
+        
+        var i = 0;
+        var time=2000;
+        var images = ['Background/img2-hea.jpg','Background/img3-hea.jpg','Background/img4-hea.jpg','Background/img5-hea.jpg','Background/img6-hea.jpg']
+
+        function slider()
+        {
+            document.imgs.src = images[i];
+            if(i<images.length-1)
+            {
+                i++
+            }
+            else
+            {
+                i=0
+            }
+            setTimeout('slider()',time)
+        }
+
+        window.onload = slider();
+
+        control1.onclick=function(){
+            testimonials.style.transform = "translateX(870px)";
+            control1.classList.add("active");
+            control2.classList.remove("active");
+            control3.classList.remove("active");
+        }
+        
+        control2.onclick=function(){
+            testimonials.style.transform = "translateX(0px)";
+            control1.classList.remove("active");
+            control2.classList.add("active");
+            control3.classList.remove("active");
+        }
+        
+        control3.onclick=function(){
+            testimonials.style.transform = "translateX(-870px)";
+            control1.classList.remove("active");
+            control2.classList.remove("active");
+            control3.classList.add("active");
+        }
+
+
+
+
+const image = document.querySelector('.image');
+const hover = document.querySelector('.hover');
+const modal = document.querySelector('.modal');
+const close = document.querySelector('.close');
+
+function show(){
+    hover.classList.add('active');
+    modal.classList.add('show');
+}
+
+function hide(){
+    hover.classList.remove('active');
+    modal.classList.remove('show');
+}
+
+image.addEventListener('click', show);
+close.addEventListener('click', hide);
+        
+        
+        
+const card1 = document.querySelector(".card1__inner");
+
+card1.addEventListener("click", function (e) {
+  card1.classList.toggle('is-flipped');
+});
+const card2 = document.querySelector(".card2__inner");
+
+card2.addEventListener("click", function (e) {
+  card2.classList.toggle('is-flipped');
+});
+const card3 = document.querySelector(".card3__inner");
+
+card3.addEventListener("click", function (e) {
+  card3.classList.toggle('is-flipped');
+});
+
+
+$(document).ready(function(){
+    $('.counter').counterUp({
+      delay: 10,
+      time: 1200
+    });
+  });
+    </script>      
+    
+
+</body>
+
+</html>

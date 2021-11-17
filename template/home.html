@@ -1,0 +1,323 @@
+{% load static %}
+<html>
+    <head>
+        <title>FundZ</title>
+        <link rel="stylesheet" href="{% static 'homestyle.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    </head>
+    <body>
+        
+        <header>
+            <a href="#" class="brand">FundZ</a>
+            <div class="menu-btn"></div>
+            
+            <div class="navigation">
+              <div class="navigation-items">
+                <a href="{%url 'home' %}" >Home</a>
+                <a href="{%url 'education' %}">Education</a>
+                <a href="{%url 'health' %}">Health</a>
+                <a href="{%url 'startup' %}">Startup</a>
+                <a href="{%url 'sports' %}">Sports</a>
+                {% if user.is_authenticated %}
+                <a>hello {{request.user.username}}</a>
+                <a href="accounts/logout/"class="btn btn-warning">Logout</a>
+                {% else %}
+                <a href="accounts/login/"class="btn btn-warning">Login / Signup</a>
+                {% endif %}
+              </div>
+            </div>
+          </header>
+
+          <div class="slider">
+              <div class="load">
+              </div>
+              <div class="content">
+                  <div class="principal">
+                      <h1> FundZ</h1>
+                      <p>This is where revolutions are born. Where social change begins. This is where you raise awareness and funds. Where you change the world. This is your key to tomorrow.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="info">
+              <div class="info-data"> 
+                <img src="{%static 'Logo/FUND-Z-logos_black.png'%}" id="info-image">
+                  <h1>About FundZ</h1>
+                  <p id="a">Funding on FUNDZ is free, with a 0% platform fee. The 0\% platform fee option empowers you to receive maximum funds for your funding campaign.<br>
+                    On our Online Crowdfunding Platform, you can raise funds for:
+                    <ul><li>Medical fundraisers such as cancer treatment, Kidney Failure, Heart Diseases & SMA (Spinal Muscular Atrophy).</li>
+                        <li>Sports funding for sports equipment for better training and all. </li>
+                        <li>Education fundraisers such sponsorship educational, out of india studies, etc. </li>
+                        <li>Startup company fundraiser to invest in the company for better working on the company goal. </li></ul></p>
+                        <br><p id="ai">
+                    Our mission is to connect people who donate the needful people and share happiness!
+                    FUNDZ’s vision for the future is “Fund Help for all”. 
+                    We have not limited ourselves to Sports/Healthcare/Education/StartUp, we also plan to start Campaign and disaster relief funding too.
+                    </p>
+              </div>
+          </div>
+
+          <div class="news">
+              <div class="news-head"> 
+                  <h2>Success Stories / News</h2>
+                  <p> </p>
+              </div>
+              <!--image card layout start-->
+            <div class="container">
+                <!--image row start-->
+                <div class="row">
+                <!--image card start-->
+                <div class="image">
+                    <img src="{%static 'images/fundraising-success-stories-community-link.png'%}" alt="" id="img">
+                    <div class="details">
+                    <p>About 95% of the income at Community Link comes from individual contributions, and they’ve been able to increase their retention to earn even more after switching to Bloomerang.</p>
+                    <div class="more">
+                        <a href="#" class="read-more">Read <span>More</span></a>
+                    </div>
+                    </div>
+                </div>
+                <!--image card end-->
+                <!--image card start-->
+                <div class="image">
+                    <img src="{%static 'images/fundraising-success-stories-maggies-place.png'%}" id="img">
+                    <div class="details">
+                    <p>Laurel and the team from Maggie’s Place provided loving support for families throughout various crises while raising funds to continue serving at a high quality. </p>
+                    <div class="more">
+                        <a href="#" class="read-more">Read <span>More</span></a>
+                        
+                    </div>
+                    </div>
+                </div>
+                <!--image card end-->
+                <!--image card start-->
+                <div class="image">
+                    <img src="{%static 'images/fundraising-success-stories-community.png'%}" alt="" id="img">
+                    <div class="details">
+                    <p>Julia and the team from CommUnity shattered their previous fundraising goals through individual donor support even as they encountered challenging times throughout the pandemic.</p>
+                    <div class="more">
+                        <a href="#" class="read-more">Read <span>More</span></a>
+                        
+                    </div>
+                    </div>
+                </div>
+                <!--image card end-->
+                </div>
+                <!--image row end-->
+                <!--image row start-->
+                <div class="row">
+                <!--image card start-->
+                <div class="image">
+                    <img src="{%static 'images/fundraising-success-stories-casa.png'%}" alt="" id="img">
+                    <div class="details">
+                        <p>Natalie and the team at Virginia Beach CASA reported approximately $10,000 in repeat/increased donations due to stronger retention rates among their supporters.</p>
+                    <div class="more">
+                        <a href="#" class="read-more">Read <span>More</span></a>
+                        
+                    </div>
+                    </div>
+                </div>
+                <!--image card end-->
+                <!--image card start-->
+                <div class="image">
+                    <img src="{%static 'images/fundraising-success-stories-napierville.png'%}" alt="" id="img">
+                    <div class="details">
+                    
+                    <p>Amy and Wendy from the Naperville Education Foundation were forced to cancel their fundraising event, but they created a special fundraising campaign in its place, raising more than $100,000.</p>
+                    <div class="more">
+                        <a href="#" class="read-more">Read <span>More</span></a>
+                        
+                    </div>
+                    </div>
+                </div>
+                <!--image card end-->
+                <!--image card start-->
+                <div class="image">
+                    <img src="{%static 'images/fundraising-success-stories-BEAM.png'%}" alt="" id="img">
+                    <div class="details">
+                    
+                    <p>Gracie from B.E.A.M. (Beaches Emergency Assistance Ministry) raised nearly six figures while keeping their constituents updated on what was going on in the community. </p>
+                    <div class="more">
+                        <a href="#" class="read-more">Read <span>More</span></a>
+                        
+                    </div>
+                    </div>
+                </div>
+                <!--image card end-->
+                </div>
+                <!--image row end-->
+            </div>
+            <!--image card layout end-->
+          </div>
+
+
+        <div class="domains">
+            <div class="domain-head">
+                <h3>Causes you can raise funds for</h3>
+                <p>Be it for a personal need, social cause or a creative idea - you can count on us for<br>the project that you want to raise funds for.</p>
+            </div>
+            <div class="con">
+            <div class="row1">
+                <!--image card start-->
+                <div class="domain">
+                    <img src="{%static 'images/5.jpeg' %}" alt="" id="img">
+                    <div class="data">
+                    <h3>Education</h3>
+                    <div class="d1">
+                        <a href="{%url 'education' %}" class="donate">Donate</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="domain">
+                    <img src="{%static 'images/20.jpeg'%}" alt="" id="img">
+                    <div class="data">
+                    <h3>HealthCare</h3>
+                    <div class="d1">
+                        <a href="{%url 'health'%}" class="donate">Donate</a>
+                    </div>
+                    </div>
+                </div>
+                <!--image card start-->
+                <div class="domain">
+                    <img src="{%static 'images/16.jpeg'%}" alt="" id="img">
+                    <div class="data">
+                    <h3>Start Up</h3>
+                    <div class="d1">
+                        <a href="{%url 'startup'%}" class="donate">Donate</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="domain">
+                    <img src="{%static 'images/12.jpeg'%}" alt="" id="img">
+                    <div class="data">
+                    <h3>Sports</h3>
+                    <div class="d1">
+                        <a href="{%url 'sports'%}" class="donate">Donate</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="why">
+            <div class="why-head">
+                <h2> Why FundZ?</h2>
+            </div>
+            <div class="con">
+                <div class="col1">
+                    <div class="item1">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span class="reason">Authenticated Funding</span>
+                    </div>
+                    <div class="item1">
+                        <i class="fas fa-users"></i>
+                        <span class="reason">Over 55,000+ supported Donars</span>
+                    </div>
+                    <div class="item1">
+                        <i class="fas fa-rupee-sign"></i>
+                        <span class="reason">Easy Fund Withdrwal</span>
+                    </div>
+                    <div class="item1">
+                        <i class="fas fa-credit-card"></i>
+                        <span class="reason">Donations via popular payment modes</span>
+                    </div>
+                </div>
+                <div class="col1">
+                    <div class="item1">
+                        <i class="fas fa-user-shield"></i>
+                        <span class="reason">Security</span>
+                    </div>
+                    <div class="item1">
+                        <i class="fas fa-comments"></i>
+                        <span class="reason">24/7 Sutomer service</span>
+                    </div>
+                    <div class="item1">
+                        <i class="fas fa-laptop"></i>
+                        <span class="reason">Smart Dashboard</span>
+                    </div>
+                    <div class="item1">
+                        <i class="fas fa-tools"></i>
+                        <span class="reason">Easy-to-manage Tools</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Slider Quotes-->
+
+ 
+
+        <!--- Footer-->
+
+        <div class="footer">
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <ul class="nav1">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Domains</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                FundZ co.op @ 2021
+            </p>
+        </div>
+
+        <!--- Footer-->
+
+
+        
+      <script type="text/javascript">
+
+    
+        var testimonials = document.getElementById('testimonials');
+        var control1 = document.getElementById('control1');
+        var control2 = document.getElementById('control2');
+        var control3 = document.getElementById('control3');
+    
+    
+        control1.onclick=function(){
+            testimonials.style.transform = "translateX(870px)";
+            control1.classList.add("active");
+            control2.classList.remove("active");
+            control3.classList.remove("active");
+        }
+    
+        control2.onclick=function(){
+            testimonials.style.transform = "translateX(0px)";
+            control1.classList.remove("active");
+            control2.classList.add("active");
+            control3.classList.remove("active");
+        }
+        
+        control3.onclick=function(){
+            testimonials.style.transform = "translateX(-870px)";
+            control1.classList.remove("active");
+            control2.classList.remove("active");
+            control3.classList.add("active");
+        }
+        //javascript for navigation bar effect on scroll
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+
+        </script>
+        
+    </body>
+</html>

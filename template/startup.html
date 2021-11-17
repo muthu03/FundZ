@@ -1,0 +1,498 @@
+{%load static %}
+<html>
+
+<head>
+    <title>Testimonials - Easy Tutorials</title>
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+    <script src="https://use.fontawesome.com/93d0f84c5d.js"></script>
+
+</head>
+
+<body onload="slider()">
+    <div class = "navbar">
+        <ul>
+        <img src="{%static 'Logo/FUND-Z-logos_white.png' %}" height="100px" width="100px" style="padding: 20px;">
+        <li><a href="{% url 'home' %}">HOME</a></li>
+        <li><a href="{% url 'education'%}">EDUCATION</a></li>
+        <li><a href="{% url 'health' %}">HEALTH</a></li>
+        <li><a href="{% url 'startup'%}">START-UP</a></li>
+        <li><a href="{% url 'sports' %}">SPORTS</a></li>
+        </ul>
+    </div>
+    <div class="hero-image">
+        <img name="imgs" class = "hero1" width=100% height=700>
+        <div class="hero-text">
+            <h1>START-UP</h1>
+        </div>
+      </div>
+    <!--THis is for about uis -->
+    <div class="about">
+    <div class="card1">
+		<div class="card1__inner">
+			<div class="card1__face card1__face--front">
+				<h2>Fresh Strat-up</h2>
+			</div>
+			<div class="card1__face card1__face--back">
+				<div class="card1__content">
+					<div class="card1__header">
+						<img src="{%static 'images/start-up/freshstartup.png' %}" alt="" class="pp" />
+						<h2>Fresh Strartups</h2>
+					</div>
+					<div class="card1__body">
+						<h3>Domain Concentrated</h3>
+						<p style="text-align: justify;"> Fresh strart-ups is focused on the new idea created by a group of people or team, that need funds for its <strong>Fresh implementation</strong> in market.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="card2">
+		<div class="card2__inner">
+			<div class="card2__face card2__face--front">
+				<h2>Individual Strat-up</h2>
+			</div>
+			<div class="card2__face card2__face--back">
+				<div class="card2__content">
+					<div class="card2__header">
+						<img src="https://images.unsplash.com/photo-1588856122867-363b0aa7f598?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80" alt="" class="pp" />
+						<h2>Individual Strat-up
+                        </h2>
+					</div>
+					<div class="card2__body">
+						<h3>Domain Concentrated</h3>
+                        <p style="text-align: justify;">The Individual start-up focuses on the start-up that is started or yet to be implemented by a sigle <strong>Individual</strong>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="card3">
+		<div class="card3__inner">
+			<div class="card3__face card3__face--front">
+				<h2>Start-up in need</h2>
+			</div>
+			<div class="card3__face card3__face--back">
+				<div class="card3__content">
+					<div class="card3__header">
+						<img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="" class="pp" />
+						<h2>Start-up in need</h2>
+					</div>
+					<div class="card3__body">
+						<h3>Domain Concentrated</h3>
+                        <p style="text-align: justify;">Start-up in need focuses on the start-ups that are <strong>Already started</strong>, And requires some funds untill it becomes self sustainable.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--THis is for about uis -->
+
+
+
+
+    <!--THis is for donation  -->
+    <div class="donation">
+    <div class="d_col">
+    <div class="modal">
+        <img src="images/Education/hellen.jpg"  alt="">
+        <div class="close"></div>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <div class="header">
+               
+                <div class="main">
+                    <div class="image">
+                        <img src="{%static 'images/start-up/chills.png'%}" alt="" width="110" height="120">
+                    </div>
+                    <h3 class="name">CHILLS</h3>
+                    <h3 class="sub-name">chillsdrink100@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="left">
+                    <div class="about-container">
+                        <h3 class="title">Reason</h3>
+                        <p style = "text-align: justify;" class="text">A small regional cool drink startup in Chennai. The business can be widened across the Tamilnadu and Build news production plants with the help of funds. <br><br><br> Contact:+91 9876543211</p>
+                    </div>
+                    <br>
+                    <div class="buttons-wrap">
+                        <div class="follow-wrap">
+                            <a href="{%url 'pay' %}" class="follow">Donate</a>
+                        </div>
+                        <div class="share-wrap">
+                            <a href="#" class="share">Share</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                 
+                    <div>
+                        <h3 class="number">150k</h3>
+                        <h3 class="number-title">Required</h3>
+                    </div>
+                    <div>
+                        <h3 class="number">90K</h3>
+                        <h3 class="number-title">Donated</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <img src="" alt="">
+        <div class="close"></div>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="main2">
+                    <div class="image2">
+                        <div class="hover2">
+                            <i class="fas fa-camera fa-2x"></i>
+                        </div>
+                    </div>
+                    <h3 class="name">TECHNO PRIVATE LTD.</h3>
+                    <h3 class="sub-name">teachnofficial@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="left">
+                    <div class="about-container">
+                        <h3 class="title">Reason</h3>
+                        <p class="text" style="text-align: justify;">This is a fresh tech solutions start-up that contitute of young graduated students and seniors worked previously on IT environments. The company is in need of funds for their requiremnts of PC's, Rent for its office,etc.  </p>
+                    </div>
+              <br>
+                    <div class="buttons-wrap">
+                        <div class="follow-wrap">
+                            <a href="{%url 'pay' %}" class="follow">Donate</a>
+                        </div>
+                        <div class="share-wrap">
+                            <a href="#" class="share">Share</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                 
+                    <div>
+                        <h3 class="number">100K</h3>
+                        <h3 class="number-title">Required</h3>
+                    </div>
+                    <div>
+                        <h3 class="number">47K</h3>
+                        <h3 class="number-title">Donated</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="d_col">
+    <div class="modal">
+        <img src="images/profil.jpeg" alt="">
+        <div class="close"></div>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <div class="header">
+               
+                <div class="main3">
+                    <div class="image3">
+                        <div class="hover3">
+                            <i class="fas fa-camera fa-2x"></i>
+                        </div>
+                    </div>
+                    <h3 class="name">CLOUD KITCHEN</h3>
+                    <h3 class="sub-name">Cloud_kitchen@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="left">
+                    <div class="about-container">
+                        <h3 class="title">Reason</h3>
+                        <p class="text" style="text-align: justify;">The idea is to start a kitchen where 100's of dishes will be prepared. The order can be placed via whatsapp and website as well, then the food will be delivered at your doorstep. The food will be prepared ia healty way in home cooking style.<br><br></p>
+                    </div>
+                    <br>
+                    <div class="buttons-wrap">
+                        <div class="follow-wrap">
+                            <a href="{%url 'pay' %}" class="follow">Donate</a>
+                        </div>
+                        <div class="share-wrap">
+                            <a href="#" class="share">Share</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                 
+                    <div>
+                        <h3 class="number">80K</h3>
+                        <h3 class="number-title">Required</h3>
+                    </div>
+                    <div>
+                        <h3 class="number">42K</h3>
+                        <h3 class="number-title">Donated</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <img src="" alt="">
+        <div class="close"></div>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <div class="header">
+               
+                <div class="main4">
+                    <div class="image4">
+                        <img src="https://ns.yatracdn.com/common/images/fresco/fresco-footer-images/corona/car-guidlines/01.jpg" alt="" width="110" height="120">
+                     
+                    </div>
+                    <h3 class="name">Cabzz</h3>
+                    <h3 class="sub-name">cabzz000@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="left">
+                    <div class="about-container">
+                        <h3 class="title">Reason</h3>
+                        <p class="text" style="text-align: justify;">This is a single individual's idea to start a transport service.The individual is already a cab driver,want to make company with more cabs and employees.Fund is needed for buying cars.
+                    </div>
+                   <br>
+                    <div class="buttons-wrap">
+                        <div class="follow-wrap">
+                            <a href="{%url 'pay' %}" class="follow">Donate</a>
+                        </div>
+                        <div class="share-wrap">
+                            <a href="#" class="share">Share</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                 
+                    <div>
+                        <h3 class="number">80K</h3>
+                        <h3 class="number-title">Required</h3>
+                    </div>
+                    <div>
+                        <h3 class="number">37K</h3>
+                        <h3 class="number-title">Donated</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+    <!--- This is for Voluenteers --->
+    <div class=voluenteers>
+    <figure class="snip0013">
+        <img src="{%static 'images/start-up/smile.jpg'%}" alt="sample32"/>
+        <div>
+            <a href="https://twitter.com/smilefoundation?s=20"><i class="ion-social-twitter left icon"></i></a>
+            <a href="https://www.linkedin.com/company/smile-foundation/"><i class="ion-social-linkedin right-icon"></i></a>
+        </div>			
+    </figure>
+    <figure class="snip0013">
+        <img src="{%static 'images/start-up/give.png' %}" alt="sample33"/>
+        <div>
+            <a href="https://twitter.com/GiveIndia?s=20"><i class="ion-social-twitter left-icon"></i></a>
+            <a href="https://www.linkedin.com/company/giveindia/"><i class="ion-social-linkedin right-icon"></i></a>
+        </div>			
+    </figure>
+    <figure class="snip0013">
+        <img src="https://pbs.twimg.com/profile_images/1425748012480045056/MclW39CN_400x400.jpg" alt="sample34"/>
+        <div>
+            <a href="https://www.linkedin.com/company/the-akshaya-patra-foundation/?originalSubdomain=in"><i class="ion-social-twitter left-icon"></i></a>
+            <a href="https://twitter.com/akshayapatrausa"><i class="ion-social-linkedin right-icon"></i></a>
+        </div>			
+    </figure>
+    </div>
+    
+    <!--- This is for testimonials --->
+
+    <div class="container">
+        <div class="veiw-box">
+            <div id="testimonials">
+                <div class="user">
+                    <img src="{%static 'images/Education/hellen.jpg' %}" alt="">
+                    <p>Alone we can do so little; together we can do so much</p>
+                    <h3>Helen Keller</h3>
+                </div>
+                <div class="user space">
+                    <img src="{%static 'images/Education/kathy.jpg'%}" alt="">
+                    <p>Giving is not just about making a donation. It is about making a difference.</p>
+                    <h3>Kathy Calvin</h3>
+                </div>
+                <div class="user">
+                    <img src="{%static 'images/Education/mother teresa.jpg'%}" alt="">
+                    <p>We know only too well that what we are doing is nothing more than a drop in the ocean. But if the drop were not there, the ocean would be missing something.</p>
+                    <h3>Mother Teresa</h3>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <span id="control1"></span>
+                <span id="control2" class="active"></span>
+                <span id="control3"></span>
+            </div>
+            
+        </div>
+    </div>
+    
+
+<!--- This is for testimonials --->
+
+<!--    This si sfor counter-->
+<div class="test">
+<div class="counter-up">
+    <div class="content">
+      <div class="box">
+        <div class="icon"><i class="fa fa-history"></i></div>
+        <div class="counter">10</div>
+        <div class="text">Number of Donars</div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa fa-gift"></i></div>
+        <div class="counter">6</div>
+        <div class="text">Number of Donation Requests</div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa fa-users"></i></div>
+        <div class="counter">2</div>
+        <div class="text">Number of Completed Donations</div>
+      </div>
+     
+    </div>
+  </div>
+  
+</div>
+
+<!--Thus is for counter-->
+    <script>
+        var slideimg = document.getElementById('imgs');
+        var testimonials = document.getElementById('testimonials');
+        var control1 = document.getElementById('control1');
+        var control2 = document.getElementById('control2');
+        var control3 = document.getElementById('control3');
+        
+        var i = 0;
+        var time=2000;
+        var images = ['https://innovativecompany.co/wp-content/uploads/bfi_thumb/bigstock-startup-business-people-group-102984194-mxvqhrnxaoj6pg5u39b31klu93s3g1plsschszqp00.jpg','https://cdn.startupsavant.com/images/startup-culture/articles/what-is-a-startup.jpg','https://www.roberthalf.com/sites/default/files/styles/full_width_content_image_1x_large_823/public/2020-01/The-CFOs-Essential-Role-in-Startups-and-Fast-Growing-Companies-Blog-RHMR-01-16-20.jpg?itok=Z3UZR5ws','https://www.chicagotribune.com/resizer/Jt2CWa5cH-mrUiOJ2GVITWKCe5k=/800x511/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/YJ76HJQGLRHAZJBCHKSA6GVIFQ.jpg']
+
+        function slider()
+        {
+            document.imgs.src = images[i];
+            if(i<images.length-1)
+            {
+                i++
+            }
+            else
+            {
+                i=0
+            }
+            setTimeout('slider()',time)
+        }
+
+        window.onload = slider();
+
+        control1.onclick=function(){
+            testimonials.style.transform = "translateX(870px)";
+            control1.classList.add("active");
+            control2.classList.remove("active");
+            control3.classList.remove("active");
+        }
+        
+        control2.onclick=function(){
+            testimonials.style.transform = "translateX(0px)";
+            control1.classList.remove("active");
+            control2.classList.add("active");
+            control3.classList.remove("active");
+        }
+        
+        control3.onclick=function(){
+            testimonials.style.transform = "translateX(-870px)";
+            control1.classList.remove("active");
+            control2.classList.remove("active");
+            control3.classList.add("active");
+        }
+
+
+
+
+const image = document.querySelector('.image');
+const hover = document.querySelector('.hover');
+const modal = document.querySelector('.modal');
+const close = document.querySelector('.close');
+
+function show(){
+    hover.classList.add('active');
+    modal.classList.add('show');
+}
+
+function hide(){
+    hover.classList.remove('active');
+    modal.classList.remove('show');
+}
+
+image.addEventListener('click', show);
+close.addEventListener('click', hide);
+        
+        
+        
+const card1 = document.querySelector(".card1__inner");
+
+card1.addEventListener("click", function (e) {
+  card1.classList.toggle('is-flipped');
+});
+const card2 = document.querySelector(".card2__inner");
+
+card2.addEventListener("click", function (e) {
+  card2.classList.toggle('is-flipped');
+});
+const card3 = document.querySelector(".card3__inner");
+
+card3.addEventListener("click", function (e) {
+  card3.classList.toggle('is-flipped');
+});
+
+
+$(document).ready(function(){
+    $('.counter').counterUp({
+      delay: 10,
+      time: 1200
+    });
+  });
+    </script>      
+    
+
+</body>
+
+</html>

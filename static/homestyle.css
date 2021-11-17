@@ -1,0 +1,558 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/*- Nav and slider -*/
+header {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 200px;
+  transition: 0.5s ease;
+}
+
+header .brand {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navigation {
+  position: relative;
+}
+
+header .navigation .navigation-items a {
+  position: relative;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  left: 100px;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before {
+  width: 100%;
+}
+
+.load {
+  animation: slide 2s;
+}
+
+.slider {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  animation: slide 40s ease-in-out infinite;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.content {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.principal {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.principal h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.principal p {
+  font-size: 20px;
+}
+
+@keyframes slide {
+  0%,
+  100% {
+    background-image: url("images/1.jpeg");
+  }
+  20% {
+    background-image: url("images/2.jpeg");
+  }
+  40% {
+    background-image: url("images/3.jpeg");
+  }
+  60% {
+    background-image: url("images/4.jpeg");
+  }
+  80% {
+    background-image: url("images/5.jpeg");
+  }
+}
+/*- Nav and slider -*/
+
+/*- About Fundzz -*/
+.info-data {
+  padding-left: 40px;
+  padding-top: 35px;
+  font-style: unset;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.info h1 {
+  font-size: bold;
+  max-width: 60%;
+}
+
+.info p #a {
+  margin-top: 20px;
+  max-width: 60%;
+  margin-left: 30px;
+}
+
+.info ul {
+  margin-top: 10px;
+  max-width: 60%;
+  margin-left: 50px;
+}
+
+.info #ai {
+  max-width: 60%;
+  margin-left: 30px;
+}
+
+#info-image {
+  border-radius: 30px;
+  margin-right: 70px;
+  margin-top: 25px;
+  height: 300px;
+  width: 300px;
+  float: right;
+  background-color: #12121393;
+  border-radius: 20%;
+}
+/*- About Fundzz -*/
+
+/*- News -*/
+.news {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.news-head h2 {
+  position: relative;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container {
+  margin: 20px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image {
+  background-color: #12121302;
+  position: relative;
+  flex: 1;
+  border-radius: 25%;
+  width: 350px;
+  height: 350px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.image img {
+  opacity: 1;
+  width: 370px;
+  height: 350px;
+  position: relative;
+  vertical-align: top;
+  transition: 0.6s;
+  transition-property: opacity;
+}
+
+.image:hover img {
+  opacity: 0.4;
+}
+
+.image .details {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.image .details p {
+  margin: 30px 30px 0 30px;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  opacity: 0;
+  transition: 0.6s;
+  transition-property: opacity, transform;
+  color: #000;
+}
+
+.image:hover .details p {
+  opacity: 1;
+  transform: translateY(+20px);
+}
+
+.more {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  bottom: -60px;
+  transition: 0.6s;
+  transition-property: bottom;
+  font-weight: 500;
+  font-size: large;
+}
+
+.image:hover .more {
+  bottom: 0;
+}
+
+.more .read-more {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.more .read-more span {
+  font-weight: 900;
+}
+
+.more .icon-links i {
+  color: #000;
+  font-size: 20px;
+}
+
+.more .icon-links a:not(:last-child) i {
+  margin-right: 20px;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 1080px) {
+  .image {
+    flex: 100%;
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 400px) {
+  .image .details p {
+    font-size: 16px;
+  }
+
+  .more .read-more,
+  .more .icon-links a i {
+    font-size: 18px;
+  }
+}
+/*- News -*/
+
+/*- Domains-*/
+
+.domains {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.domain-head h3 {
+  position: relative;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+}
+.domain-head p {
+  position: relative;
+  font-size: smaller;
+  text-align: center;
+}
+.con {
+  margin: 20px;
+}
+
+.row1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.domain {
+  background: #50a7ff;
+  position: relative;
+  flex: 1;
+  max-width: 300px;
+  height: 200px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.domain img {
+  opacity: 0.9;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  vertical-align: top;
+  transition: 0.6s;
+  transition-property: opacity;
+}
+
+.domain:hover img {
+  opacity: 0.5;
+}
+
+.domain .data {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.domain .data h3 {
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #000;
+  margin-top: 70px;
+  transition: 0.4s;
+  transition-property: transform;
+}
+
+.domain .data h2 span {
+  font-weight: 900;
+}
+
+.domain:hover .data h2 {
+  transform: translateY(-30px);
+}
+
+.domain .data p {
+  margin: 30px 30px 0 30px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  transition: 0.6s;
+  transition-property: opacity, transform;
+}
+
+.domain:hover .data p {
+  opacity: 1;
+  transform: translateY(-40px);
+}
+
+.d1 {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  bottom: -60px;
+  transition: 0.6s;
+  transition-property: bottom;
+  font-weight: 500;
+  font-size: large;
+}
+
+.domain:hover .d1 {
+  bottom: 0;
+}
+
+.d1 .donate {
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  align-content: center;
+  text-transform: uppercase;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 1080px) {
+  .domain {
+    flex: 100%;
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 400px) {
+  .domain .data p {
+    font-size: 16px;
+  }
+
+  .d1 .donate {
+    font-size: 18px;
+  }
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: rgba(122, 122, 122, 0.151);
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #121213;
+}
+
+.footer .social a i {
+  size: 18px;
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.footer .social a:hover {
+  opacity: 0.9;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+  color: #000;
+}
+
+.footer ul li a:hover {
+  opacity: 1;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: rgb(32, 32, 32);
+}
+/*- Footer -*/
+
+/*- why FundZ-*/
+
+.why-head h2 {
+  position: relative;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+}
+
+.con {
+  margin: 10px;
+}
+
+.col1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.item1 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 15px;
+  background-color: rgba(124, 124, 124, 0.021);
+  max-width: 300px;
+  height: auto;
+  flex: 1;
+  overflow: hidden;
+}
+
+.item1 i {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  font-size: xx-large;
+  border-radius: 40%;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+}
+
+.item1 .reason {
+  text-align: center;
+  margin: 10px;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 300;
+}
